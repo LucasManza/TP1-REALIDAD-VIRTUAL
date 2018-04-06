@@ -22,7 +22,7 @@ public class Instantion : MonoBehaviour
         {
             var instanceObject = Instantiate(GameObject);
             var instanceMaterial = Instantiate(material);
-            instanceObject.GetComponent<Renderer>().material = instanceMaterial;
+            instanceObject.GetComponent<MeshRenderer>().material = instanceMaterial;
             instanceObject.transform.position = GeneratePosition();
             instanceObject.name = "[CubeGenereted]" + "(" + limit + ")";
         }
