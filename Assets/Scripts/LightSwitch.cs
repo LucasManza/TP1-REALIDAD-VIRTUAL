@@ -5,6 +5,7 @@ using VRTK;
 
 public class LightSwitch : VRTK_InteractableObject {
     [Header("Light Button")] public List<LightAvailable> lights;
+   
 
     public override void StartUsing(VRTK_InteractUse currentUsingObject = null) {
         base.StartUsing(currentUsingObject);
